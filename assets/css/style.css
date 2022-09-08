@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Seção Header */
 .vitrine {
   width: 100;
   height: 100vh;
@@ -23,6 +24,7 @@
   box-shadow: inset 120px 100px 250px rgb(0, 0, 0), inset -120px -100px 250px rgb(0, 0, 0);
 }
 
+/* Barra de Navegação */
 .vitrine-topo {
   position: relative;
   z-index: 2;
@@ -49,7 +51,7 @@
 
 .vitrine-topo select {
   background-color: transparent;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   border-radius: 2px;
   padding: 8px 22px;
@@ -62,7 +64,50 @@
   background-color: rgb(179, 179, 179);
 }
 
-@media (max-width: 659px) {
+/* Iniciar/Assinar */
+.vitrine .container-assinatura {
+  z-index: 2;
+  position: relative;
+  top: 180px;
+  width: 100%;
+  text-align: center;
+}
+
+.vitrine .container-assinatura h1, p {
+  color: rgb(255, 255, 255);
+}
+
+.vitrine .container-assinatura h1 {
+  font-size: 3.9rem;
+}
+
+.vitrine .container-assinatura .paragrafo-1 {
+  font-size: 1.7rem;
+}
+
+.vitrine .container-assinatura .paragrafo-2 {
+  font-size: 1.2rem;
+}
+
+.vitrine .container-assinatura input {
+  width: 35%;
+  padding: 22px;
+  border: none;
+  margin-top: 0.5%;
+  outline: none;
+}
+
+.vitrine .container-assinatura button {
+  padding: 22px;
+  border: none;
+  background-color: rgb(229, 9, 20);
+  color: white;
+  margin-left: -0.3%;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media(max-width: 659px) {
   .vitrine-topo {
     padding: 26px 0px 0px 25px;
   }
@@ -78,5 +123,19 @@
     position: relative;
     right: 40px;
     padding: 2px 10px;
+  }
+}
+
+@media(max-width: 346px) {
+  .vitrine-topo #logo {
+    height: 22px;
+  }
+  .vitrine-topo .botao-entrar {
+    padding: 1px 5px;
+  }
+  .vitrine-topo select {
+    padding: 1px 0px;
+    position: relative;
+    right: 30px;
   }
 }
