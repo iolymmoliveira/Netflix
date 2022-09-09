@@ -40,7 +40,7 @@
   color: rgb(255, 255, 255);
   font-size: 1rem;
   font-weight: 400;
-  /* font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
   border: none;
   padding: 7px 17px;
   border-radius: 3px;
@@ -52,9 +52,10 @@
 .vitrine-topo select {
   background-color: transparent;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
   border-radius: 2px;
-  padding: 8px 22px;
+  padding: 8px 15px;
   float: right;
   position: relative;
   right: 85px;
@@ -68,46 +69,93 @@
 .vitrine .container-assinatura {
   z-index: 2;
   position: relative;
-  top: 180px;
-  width: 100%;
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 105px 0px;  
 }
 
-.vitrine .container-assinatura h1, p {
+.vitrine .container-assinatura h1, h2, p {
   color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
 }
 
 .vitrine .container-assinatura h1 {
-  font-size: 3.9rem;
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin: 40px 155px 0px 155px;
 }
 
-.vitrine .container-assinatura .paragrafo-1 {
-  font-size: 1.7rem;
+.vitrine .container-assinatura h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 8px 155px;
+  letter-spacing: 0.03rem;
 }
 
-.vitrine .container-assinatura .paragrafo-2 {
-  font-size: 1.2rem;
+.vitrine .container-assinatura .paragrafo {
+  font-size: 1.22rem;
+  margin: 0px 97.75px;
+  padding: 23px 0px 17px;
 }
 
+.form {
+  width: 100%;
+  height: 60px;
+}
 .vitrine .container-assinatura input {
-  width: 35%;
-  padding: 22px;
-  border: none;
-  margin-top: 0.5%;
+  width: 450px;
+  height: 60px;
+  padding: 10px 10px 0px;
   outline: none;
+  font-size: 1rem;
+
 }
 
 .vitrine .container-assinatura button {
-  padding: 22px;
+  width: 182.83px;
+  height: 60px;
+  padding: 16px;
   border: none;
   background-color: rgb(229, 9, 20);
   color: white;
+  font-weight: 400;
+  font-size: 1.625rem;
   margin-left: -0.3%;
-  font-weight: bold;
 }
 
 /* Responsivo */
+@media(max-width: 943px) {
+  /* Iniciar/Assinar */
+  .vitrine .container-assinatura {
+    position: relative;
+    top: 90px;
+  }
+  .vitrine .container-assinatura h1 {
+    font-size: 3.4rem;
+  }
+  .vitrine .container-assinatura h2 {
+    font-size: 1.5rem;
+  }
+  .vitrine .container-assinatura .paragrafo {
+    font-size: 1rem;
+  }
+  .vitrine .container-assinatura input {
+    padding: 17px;
+    width: 55%;
+  }
+  .vitrine .container-assinatura button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    padding: 12px;
+  }
+}
+
 @media(max-width: 659px) {
+  /* Barra de Navegação */
   .vitrine-topo {
     padding: 26px 0px 0px 25px;
   }
@@ -124,9 +172,29 @@
     right: 40px;
     padding: 2px 10px;
   }
+  /* Iniciar/Assinar */
+  .vitrine .container-assinatura {
+    position: relative;
+    top: 60px;
+  }
+  .vitrine .container-assinatura h1 {
+    font-size: 2rem;
+    padding: 50px 50px 50px 0px;
+  }
+  .vitrine .container-assinatura h2 {
+    font-size: 1.5rem;
+  }
+  .vitrine .container-assinatura .paragrafo {
+    font-size: 1rem;
+  }
+  .vitrine .container-assinatura input {
+    padding: 14px;
+    width: 70%;
+  }
 }
 
 @media(max-width: 346px) {
+  /* Barra de Navegação */
   .vitrine-topo #logo {
     height: 22px;
   }
@@ -137,5 +205,19 @@
     padding: 1px 0px;
     position: relative;
     right: 30px;
+  }
+  /* Iniciar/Assinar */
+  .vitrine .container-assinatura h1 {
+    font-size: 1.5rem;
+  }
+  .vitrine .container-assinatura h2 {
+    font-size: 1.1rem;
+  }
+  .vitrine .container-assinatura .paragrafo {
+    font-size: 0.8rem;
+  }
+  .vitrine .container-assinatura input {
+    padding: 14px;
+    width: 70%;
   }
 }
