@@ -35,14 +35,14 @@ body {
   padding: 26px 0px 0px 55px;
 }
 
-.vitrine-topo #logo {
+ #logo {
   height: 35px;
 }
 
-.vitrine-topo .botao-entrar {
+.botao-entrar {
   background-color: rgb(229, 9, 20);
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   border: none;
@@ -70,7 +70,7 @@ body {
 }
 
 /* Iniciar/Assinar */
-.vitrine .container-assinatura {
+.container-assinatura {
   z-index: 2;
   position: relative;
   text-align: center;
@@ -85,20 +85,20 @@ h1, h2, p {
   font-family: 'Roboto', sans-serif;
 }
 
-.vitrine .container-assinatura h1 {
+.container-assinatura h1 {
   font-size: 3.125rem;
   font-weight: 700;
   margin: 40px 155px 0px 155px;
 }
 
-.vitrine .container-assinatura h2 {
+.container-assinatura h2 {
   font-size: 1.625rem;
   font-weight: 400;
   margin: 8px 155px;
   letter-spacing: 0.03rem;
 }
 
-.vitrine .container-assinatura .paragrafo {
+.container-assinatura .paragrafo {
   font-size: 1.22rem;
   margin: 0px 97.75px;
   padding: 23px 0px 17px;
@@ -109,7 +109,7 @@ h1, h2, p {
   height: 60px;
 }
 
-.vitrine .container-assinatura input {
+.container-assinatura input {
   width: 450px;
   height: 60px;
   padding: 10px 10px 0px;
@@ -118,7 +118,7 @@ h1, h2, p {
 
 }
 
-.vitrine .container-assinatura button {
+.container-assinatura button {
   width: 182.83px;
   height: 60px;
   padding: 16px;
@@ -132,7 +132,7 @@ h1, h2, p {
 
 /* Seção Aproveite na TV - Início */
 /* section */
-.container-aproveiteNaTV {
+.container-aproveiteNaTV, .container-offline {
   border-top: 8px solid rgb(34, 34, 34);
   display: flex;
   padding: 0px 80px 8px 120px;
@@ -160,7 +160,7 @@ h1, h2, p {
   overflow: hidden;
   position: relative;
   width: 70%;
-  height: 500px;
+  height: 450px;
 }
 
 .container-img-animacao img {
@@ -177,6 +177,53 @@ h1, h2, p {
 /* Seção Aproveite na TV - Fim */
     
 /* Seção Offline - Início */
+.container-img-smartphone img {
+  width: 100%;
+}
+
+.box-download {
+  border: 2px solid rgba(255, 255, 255, .25);
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 70%;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: -26%;
+}
+
+.box-download .img-box {
+  width: 3.4em;
+  height: 72px;
+}
+
+.box-download p {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.box-download p a {
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #0071eb;
+}
+
+.box-download .img-download {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 5%;
+}
+
+.container-offline .container-texto {
+  padding-top: 12%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
 /* Seção Offline - Fim */
 
 /* Seção Tempo - Início */
