@@ -132,7 +132,7 @@ h1, h2, p {
 
 /* Seção Aproveite na TV - Início */
 /* section */
-.container-aproveiteNaTV, .container-offline {
+.container-aproveiteNaTV, .container-offline, .container-tempo {
   border-top: 8px solid rgb(34, 34, 34);
   display: flex;
   padding: 0px 80px 8px 120px;
@@ -173,10 +173,13 @@ h1, h2, p {
   margin-top: 16%;
   width: 73%;
 }
-
 /* Seção Aproveite na TV - Fim */
     
 /* Seção Offline - Início */
+.container-offline {
+  height: 466px;
+}
+
 .container-img-smartphone img {
   width: 100%;
 }
@@ -227,6 +230,21 @@ h1, h2, p {
 /* Seção Offline - Fim */
 
 /* Seção Tempo - Início */
+.container-tempo .container-texto {
+  padding-right: 15%;
+}
+
+.container-tempo .container-img-animacao img {
+  position: absolute;
+  width: 100%;
+  padding-top: 8%;
+}
+
+.video-2 {
+  margin-left: 19%;
+  margin-top: 14%;
+  width: 61%;
+}
 /* Seção Tempo - Fim */
 
 /* Seção Perfil - Início */
