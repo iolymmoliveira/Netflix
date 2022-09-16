@@ -132,11 +132,11 @@ h1, h2, p {
 
 /* Seção Aproveite na TV - Início */
 /* section */
-.container-aproveiteNaTV, .container-offline, .container-tempo {
+.container-aproveiteNaTV, .container-offline, .container-tempo, .container-perfil-infantil {
   border-top: 8px solid rgb(34, 34, 34);
   display: flex;
   padding: 0px 80px 8px 120px;
-}
+  }
 
 .container-texto {
   padding-top: 13%;
@@ -248,6 +248,25 @@ h1, h2, p {
 /* Seção Tempo - Fim */
 
 /* Seção Perfil - Início */
+.container-perfil-infantil {
+  height: 466px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-img-kids img{
+  width: 110%;
+  padding-top: 11%;
+}
+
+.container-perfil-infantil .container-texto h1{
+  padding: 0 8% 0 15%;
+}
+
+.container-perfil-infantil .container-texto h2{
+  padding: 0 0 16% 15%;
+}
+
 /* Seção Perfil - Fim */
 
 /* Seção Perguntas - Início */
