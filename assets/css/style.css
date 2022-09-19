@@ -136,6 +136,7 @@ h1, h2, p {
   border-top: 8px solid rgb(34, 34, 34);
   display: flex;
   padding: 0px 80px 8px 120px;
+  height: 466px;
   }
 
 .container-texto {
@@ -165,7 +166,7 @@ h1, h2, p {
 
 .container-img-animacao img {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
 }
 
 .video-1 {
@@ -181,7 +182,7 @@ h1, h2, p {
 }
 
 .container-img-smartphone img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .box-download {
@@ -236,7 +237,7 @@ h1, h2, p {
 
 .container-tempo .container-img-animacao img {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   padding-top: 8%;
 }
 
@@ -254,8 +255,8 @@ h1, h2, p {
   justify-content: space-between;
 }
 
-.container-img-kids img{
-  width: 110%;
+.container-img-kids img {
+  max-width: 110%;
   padding-top: 11%;
 }
 
@@ -270,26 +271,131 @@ h1, h2, p {
 /* Seção Perfil - Fim */
 
 /* Seção Perguntas - Início */
+.separacao {
+  background: transparent;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+.container-perguntas {
+  background: transparent;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+  text-align: center;
+}
+.div-container-texto {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.div-container-texto h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.lista-perguntas {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  max-width: 815px;
+  margin: 1.25em auto;
+}
+.lista-perguntas-item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style-type: none;
+  margin: 0 0 8px;
+}
+.pergunta {
+  border: 0;
+  font-weight: 400;
+  margin-bottom: 1px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  position: relative;
+  width: 100%;
+  background: #303030;
+  display: block;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  margin: 0
+}
+.pergunta img {
+  fill: #fff;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+}
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+}
+.lista-perguntas .resposta span {
+  display: inline-block;
+  padding: 1.2em
+}
+.formulario-email {
+  margin: 0 auto;
+  max-width: 950px;
+  padding-top: 0.85rem;
+  display: flex;
+  flex-direction: column;
+}
+.formulario-email h2 {
+  font-size: 1.2rem;
+  max-width: none;
+  padding-bottom: 20px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.div-formulario-email {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+}
 /* Seção Perguntas - Fim */
 
 /* Seção Links - Início */
 /* Seção Links - Fim */
 
 /* Responsivo */
-@media(max-width: 943px) {
+@media(max-width: 949px) {
+  .vitrine {
+    display: block;
+    height: 100%;
+  }
   /* Iniciar/Assinar */
   .vitrine .container-assinatura {
     position: relative;
-    top: 90px;
   }
   .vitrine .container-assinatura h1 {
-    font-size: 3.4rem;
+    font-size: 3.1rem;
+    margin: 0px 98px;
+    padding-top: 10px;
   }
-  .vitrine .container-assinatura h2 {
-    font-size: 1.5rem;
-  }
+ 
   .vitrine .container-assinatura .paragrafo {
-    font-size: 1rem;
+    font-size: 1.43rem;
+    padding: 0px 145px;
+    padding: 10px 145px 10px 145px;
   }
   .vitrine .container-assinatura input {
     padding: 17px;
@@ -302,9 +408,60 @@ h1, h2, p {
     margin-top: 1.5%;
     padding: 12px;
   }
+  /* Seção Aproveite na TV */
+  main .container-aproveiteNaTV {
+    display: block;
+  }
+  .container-aproveiteNaTV {
+    height: 672px;
+    padding: 70px 45px;
+  }
+  .container-texto {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .container-texto h1 {
+    font-size: 2.5rem;
+  }
+  .container-texto h2 {
+    font-size: 1.25rem;
+    margin: 15px 0px 5px;
+  }
+  .container-img-animacao {
+    max-width: 100%;
+    margin-left: 130px;
+  }
+  /* Seção Offline  */
+  .container-offline {
+    flex-direction: column-reverse;
+    padding: 70px 45px;
+    height: 659px;    
+  }
+  .container-offline .container-texto {
+    padding: 0px;
+    height: 20%;
+  }
+  .container-img-smartphone {
+    height: 80%;
+  }
+  .container-img-smartphone img {
+    height: 120%;
+    margin-left: 120px;
+  }
+  
+    
+  /* Seção Tempo  */
+
+  /* Seção Perfil */
+
+  /* Seção Perguntas */
+
+  /* Seção links */
+
 }
 
-@media(max-width: 659px) {
+@media(max-width: 686px) {
   /* Barra de Navegação */
   .vitrine-topo {
     padding: 26px 0px 0px 25px;
@@ -341,6 +498,18 @@ h1, h2, p {
     padding: 14px;
     width: 70%;
   }
+  /* Seção Aproveite na TV */
+
+  /* Seção Offline  */
+
+  /* Seção Tempo  */
+
+  /* Seção Perfil */
+
+  /* Seção Perguntas */
+
+  /* Seção links */
+  
 }
 
 @media(max-width: 346px) {
@@ -370,4 +539,16 @@ h1, h2, p {
     padding: 14px;
     width: 70%;
   }
+  /* Seção Aproveite na TV */
+
+  /* Seção Offline  */
+
+  /* Seção Tempo  */
+
+  /* Seção Perfil */
+
+  /* Seção Perguntas */
+
+  /* Seção links */
+  
 }
