@@ -10,14 +10,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Link do ícone da aba de navegação -->
   <link rel="icon" href="assets/imgs/favicon.png">
-  <!-- Link CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  <!-- Link Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+  <!-- Link Fonte -->
+  <link rel="stylesheet" href="assets/fonts/gotham.otf">
     <!-- Font Awesome  -->
   <script src="https://kit.fontawesome.com/f85453c706.js" crossorigin="anonymous"></script>
 </head>
@@ -31,7 +25,7 @@
       <button type="submit" class="botao-entrar">Entrar</button>
       <select>
         <i class="fas fa-globe"></i> <!-- Não está aparecendo na tela - Arrumar isso -->
-        <option value="/kw-pt/" selected>Português</option>
+        <option value="/kw-pt/" selected> Português</option>
         <option value="/kw-en/">English</option>
       </select>
     </nav>
@@ -210,47 +204,47 @@
 
   <footer>
     <!-- Seção Links - Início -->
-    <section>
-      <div>
+    <section class="container-footer">
+      <div class="container-titulo">
         <h3>Dúvidas? Ligue 0800 591 8942</h3>
       </div>
-      <div>
-        <div class="coluna1">
+      <div class="container-colunas">
+        <div class="coluna">
           <p>Perguntas frequentes</p>
           <p>Relações com investidores</p>
           <p>Formas de assistir</p>
           <p>Informações corporativas</p>
           <p>Só na Netflix</p>
         </div>
-        <div class="coluna2">
+        <div class="coluna">
           <p>Central de Ajuda</p>
           <p>Carreiras</p>
           <p>Termos de Uso</p>
           <p>Entre em contato</p>
         </div>
-        <div class="coluna3">
+        <div class="coluna">
           <p>Conta</p>
           <p>Resgatar cartão pré-pago</p>
           <p>Privacidade</p>
           <p>Teste de velocidade</p>
         </div>
-        <div class="coluna4">
+        <div class="coluna">
           <p>Media Center</p>
           <p>Comprar cartão pré-pago</p>
           <p>Preferências de cookies</p>
           <p>Avisos legais</p>
         </div>
       </div>
-      <div>
-        <div class="">
-          <i class="fas fa-globe"></i>
-          <select name="languages" class="">
-            <option value="/kw-pt/" selected>Português</option>
-            <option value="/kw-en/">English</option>
-          </select>
-        </div>
+      <div class="container-final">
+          <div class="language">
+            <i class="fas fa-globe"></i>
+            <select name="languages" class="select">
+              <option value="/kw-pt/" selected>Português</option>
+              <option value="/kw-en/">English</option>
+            </select>
+          </div>
       </div>
-      <div>
+      <div class="origem">
         <p>Neftlix Brasil</p>
       </div>
     </section>
