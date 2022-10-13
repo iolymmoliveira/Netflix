@@ -20,6 +20,5 @@ for (i = 0; i < perguntas.length; i++) {
     } else {
       respostas.style.maxHeight = respostas.scrollHeight + "px";
     }
-
-	})
+})
 }

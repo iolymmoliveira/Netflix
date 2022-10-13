@@ -18,7 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/f85453c706.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,6 +30,7 @@
       <img id="logo" src="assets/imgs/logo.png" alt="Logo Netflix">
       <button type="submit" class="botao-entrar">Entrar</button>
       <select>
+        <i class="fas fa-globe"></i> <!-- Não está aparecendo na tela - Arrumar isso -->
         <option value="/kw-pt/" selected>Português</option>
         <option value="/kw-en/">English</option>
       </select>
@@ -117,7 +119,7 @@
           <li class="lista-perguntas-item">
             <button class="pergunta" type="button">
               O que é a Netflix?
-              <img src="./assets/imgs/plus.png" class="sinal-mais" alt="sinal de mais">
+              <img src="./assets/imgs/plus.png" class="botao-mais-fechar" alt="sinal de mais">
             </button>
             <div class="resposta">
               <span>
@@ -131,7 +133,7 @@
           <li class="lista-perguntas-item">
             <button class="pergunta">
               Quanto custa a Netflix?
-              <img src="./assets/imgs/plus.png" alt="sinal de mais">
+              <img src="./assets/imgs/plus.png" class="botao-mais-fechar" alt="sinal de mais">
             </button>
             <div class="resposta">
               <span>
@@ -142,7 +144,7 @@
           <li class="lista-perguntas-item">
             <button class="pergunta">
               Onde posso assistir?
-              <img src="./assets/imgs/plus.png" alt="sinal de mais">
+              <img src="./assets/imgs/plus.png" class="botao-mais-fechar" alt="sinal de mais">
             </button>
             <div class="resposta">
               <span>
@@ -156,7 +158,7 @@
           <li class="lista-perguntas-item">
             <button class="pergunta">
               Como faço para cancelar?
-              <img src="./assets/imgs/plus.png" alt="sinal de mais">
+              <img src="./assets/imgs/plus.png" class="botao-mais-fechar" alt="sinal de mais">
             </button>
             <div class="resposta">
               <span>
@@ -167,7 +169,7 @@
           <li class="lista-perguntas-item">
             <button class="pergunta">
               O que eu posso assistir na Netflix?
-              <img src="./assets/imgs/plus.png" alt="sinal de mais">
+              <img src="./assets/imgs/plus.png" class="botao-mais-fechar" alt="sinal de mais">
             </button>
             <div class="resposta">
               <span>
@@ -178,7 +180,7 @@
           <li class="lista-perguntas-item">
             <button class="pergunta">
               A Netflix é adequada para crianças?
-              <img src="./assets/imgs/plus.png" alt="sinal de mais">
+              <img src="./assets/imgs/plus.png" class="botao-mais-fechar" alt="sinal de mais">
             </button>
             <div class="resposta">
               <span>
@@ -197,7 +199,7 @@
               <input type="text" name="email" placeholder="Email">
             </div>
             <div>
-              <button type="submit">Vamos lá > </button>
+              <button type="submit">Vamos lá <i class="fa fa-thin fa-chevron-right"></i></button>
             </div>
           </div>
         </form>
@@ -208,6 +210,50 @@
 
   <footer>
     <!-- Seção Links - Início -->
+    <section>
+      <div>
+        <h3>Dúvidas? Ligue 0800 591 8942</h3>
+      </div>
+      <div>
+        <div class="coluna1">
+          <p>Perguntas frequentes</p>
+          <p>Relações com investidores</p>
+          <p>Formas de assistir</p>
+          <p>Informações corporativas</p>
+          <p>Só na Netflix</p>
+        </div>
+        <div class="coluna2">
+          <p>Central de Ajuda</p>
+          <p>Carreiras</p>
+          <p>Termos de Uso</p>
+          <p>Entre em contato</p>
+        </div>
+        <div class="coluna3">
+          <p>Conta</p>
+          <p>Resgatar cartão pré-pago</p>
+          <p>Privacidade</p>
+          <p>Teste de velocidade</p>
+        </div>
+        <div class="coluna4">
+          <p>Media Center</p>
+          <p>Comprar cartão pré-pago</p>
+          <p>Preferências de cookies</p>
+          <p>Avisos legais</p>
+        </div>
+      </div>
+      <div>
+        <div class="">
+          <i class="fas fa-globe"></i>
+          <select name="languages" class="">
+            <option value="/kw-pt/" selected>Português</option>
+            <option value="/kw-en/">English</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <p>Neftlix Brasil</p>
+      </div>
+    </section>
     <!-- Seção Links - Fim -->
   </footer>
 
