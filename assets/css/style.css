@@ -331,15 +331,11 @@ h1, h2, p {
   display: block;
   cursor: pointer;
 }
-.botao-mais-fechar {
-  fill: #fff;
-  height: 1em;
+.fa-plus, .fa-xmark {
   position: absolute;
   right: 1em;
   top: 50%;
   transform: translateY(-50%);
-  width: 1em;
-  transform: rotate();
 }
 .resposta {
   display: none;

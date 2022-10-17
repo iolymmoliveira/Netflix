@@ -20,5 +20,13 @@ for (i = 0; i < perguntas.length; i++) {
     } else {
       respostas.style.maxHeight = respostas.scrollHeight + "px";
     }
+
+		if (this.childNodes[1].classList.contains("fa-plus")) {
+      this.childNodes[1].classList.remove("fa-plus");
+      this.childNodes[1].classList.add("fa-xmark");
+    } else {
+      this.childNodes[1].classList.remove("fa-xmark");
+      this.childNodes[1].classList.add("fa-plus");
+    }
 })
 }
