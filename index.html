@@ -12,36 +12,62 @@
   <link rel="icon" href="assets/imgs/favicon.png">
   <!-- Link Fonte -->
   <link rel="stylesheet" href="assets/fonts/gotham.otf">
-    <!-- Font Awesome  -->
+  <!-- Font Awesome  -->
   <script src="https://kit.fontawesome.com/f85453c706.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Seção Header - Início -->
-  <header class="vitrine">
+  <header>
     <!-- Barra de Navegação -->
-    <nav class="vitrine-topo">
-      <img id="logo" src="assets/imgs/logo.png" alt="Logo Netflix">
-      <button type="submit" class="botao-entrar">Entrar</button>
-      <select>  
-        <option value="/kw-pt/" selected> <i class="fas fa-globe"></i> Português</option>
-        <option value="/kw-en/">English</option>
-      </select>
+    <nav class="navigation-bar">
+      <div class="navigation-bar-img">
+        <img id="logo" src="assets/imgs/logo.png" alt="Logo Netflix">
+      </div>
+      <div class="navigation-bar-item">
+        <div class="navigation-item">
+          <div class="language">
+            <i class="fas fa-xs fa-globe"></i>
+            <select name="languages" class="select">
+              <option value="/kw-pt/" selected>Português</option>
+              <option value="/kw-en/">English</option>
+            </select>
+            <i class="fas fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="navigation-item">
+          <button type="submit" class="signin-button">Entrar</button>
+        </div>
+      </div>
     </nav>
-    <!-- Iniciar/Assinar -->
-    <div class="container-assinatura">
-      <h1>Filmes, séries e muito mais. <br> Sem limites.</h1>
-      <h2>Assista onde quiser. Cancele quando quiser.</h2>
-      <p class="paragrafo">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-      <form>
-        <input type="text" name="email" placeholder="Email">
-        <button type="submit">Vamos lá > </button>
-      </form>
-    </div>
   </header>
   <!-- Seção Header - Fim -->
 
   <main>
+    <!-- Seção Iniciar/Assinar - Início -->
+    <section class="container-start">
+      <div class="container-background-img">
+        <img src="assets/imgs/background.jpg" alt="imagem-fundo" class="img-background">
+      </div>
+      <div class="container-background-overlay"></div>
+      <div class="container-card">
+        <h1 class="title-container">Filmes, séries e muito mais. <br> Sem limites.</h1>
+        <h2 class="subtitle-container">Assista onde quiser. Cancele quando quiser.</h2>
+        <form class="form-container" method="get">
+          <p class="description-container">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+          <div class="div-inputs-container">
+            <div>
+              <input type="text" name="email" placeholder="Email">
+            </div>
+            <div>
+              <button type="submit">Vamos lá <i class="fa fa-thin fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Seção Iniciar/Assinar - Fim -->
+
     <!-- Seção Aproveite na TV - Início -->
     <section class="container-aproveiteNaTV">
       <div class="container-texto">
@@ -111,15 +137,18 @@
         <ul class="lista-perguntas">
           <li class="lista-perguntas-item">
             <button class="pergunta" type="button">
-              O que é a Netflix? 
+              O que é a Netflix?
               <i class="fa fa-lg fa-plus"></i>
             </button>
             <div class="resposta">
               <span>
-                A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+                A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e
+                documentários premiados em milhares de aparelhos conectados à internet.
                 <br>
                 <br>
-                Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um
+                preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries
+                e filmes.
               </span>
             </div>
           </li>
@@ -130,7 +159,8 @@
             </button>
             <div class="resposta">
               <span>
-                Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
+                Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa
+                mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
               </span>
             </div>
           </li>
@@ -141,10 +171,14 @@
             </button>
             <div class="resposta">
               <span>
-                Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+                Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a
+                assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix,
+                como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
                 <br>
                 <br>
-                Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.
+                Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10.
+                Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a
+                Netflix com você para qualquer lugar.
               </span>
             </div>
           </li>
@@ -155,7 +189,9 @@
             </button>
             <div class="resposta">
               <span>
-                A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com
+                apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a
+                qualquer momento.
               </span>
             </div>
           </li>
@@ -166,7 +202,8 @@
             </button>
             <div class="resposta">
               <span>
-                A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
+                A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito
+                mais. Assista o quanto quiser, quando quiser.
               </span>
             </div>
           </li>
@@ -177,10 +214,13 @@
             </button>
             <div class="resposta">
               <span>
-                A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+                A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu
+                próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
                 <br>
                 <br>
-                O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.
+                O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir
+                a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não
+                quer que elas assistam.
               </span>
             </div>
           </li>
@@ -235,13 +275,13 @@
         </div>
       </div>
       <div class="container-final">
-          <div class="language">
-            <i class="fas fa-globe"></i>
-            <select name="languages" class="select">
-              <option value="/kw-pt/" selected>Português</option>
-              <option value="/kw-en/">English</option>
-            </select>
-          </div>
+        <div class="language">
+          <i class="fas fa-globe"></i>
+          <select name="languages" class="select">
+            <option value="/kw-pt/" selected>Português</option>
+            <option value="/kw-en/">English</option>
+          </select>
+        </div>
       </div>
       <div class="origem">
         <p>Neftlix Brasil</p>
