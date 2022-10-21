@@ -54,13 +54,15 @@
         <h1 class="title-container">Filmes, séries e muito mais. <br> Sem limites.</h1>
         <h2 class="subtitle-container">Assista onde quiser. Cancele quando quiser.</h2>
         <form class="form-container" method="get">
-          <p class="description-container">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+          <p class="description-container">Pronto para assistir? Informe seu email para criar ou reiniciar sua
+            assinatura.</p>
           <div class="div-inputs-container">
-            <div>
-              <input type="text" name="email" placeholder="Email">
+            <div class="div-email">
+              <input class="div-email-input" type="text" name="email" placeholder="">
+              <label class="div-email-label">Email</label>
             </div>
-            <div>
-              <button type="submit">Vamos lá <i class="fa fa-thin fa-chevron-right"></i></button>
+            <div class="div-button">
+              <button class="button" type="submit">Vamos lá <i class="fa fa-thin fa-chevron-right"></i></button>
             </div>
           </div>
         </form>
@@ -68,68 +70,91 @@
     </section>
     <!-- Seção Iniciar/Assinar - Fim -->
 
-    <!-- Seção Aproveite na TV - Início -->
-    <section class="container-aproveiteNaTV">
-      <div class="container-texto">
-        <h1>Aproveite na TV.</h1>
-        <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.
-        </h2>
-      </div>
-      <div class="container-img-animacao">
-        <img src="./assets/imgs/tv.png" alt="Imagem TV">
-        <video class="video-1" autoplay="" playsinline="" muted="" loop="">
-          <source src="./assets/videos/video1.m4v" type="video/mp4">
-        </video>
-      </div>
-    </section>
-    <!-- Seção Aproveite na TV - Fim -->
-
-    <!-- Seção Offline - Início -->
-    <section class="container-offline">
-      <div class="container-img-smartphone">
-        <img src="./assets/imgs/mobile.jpg" alt="Imagem Smartphone">
-        <div class="box-download">
-          <img class="img-box" src="./assets/imgs/boxshot.png" alt="Imagem de Capa">
-          <p>Stranger Things<br><a href="#">Download em andamento...</a></p>
-          <img class="img-download" src="./assets/imgs/download-icon.gif" alt="Seta download">
+    <section class="container-principal">
+      <!-- Div Aproveite na TV - Início -->
+      <div class="principal">
+        <div class="subprincipal">
+          <div class="principal-details">
+            <h1 class="principal-title">Aproveite na TV.</h1>
+            <h2 class="principal-subtitle">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.
+            </h2>
+          </div>
+          <div class="principal-image-container">
+            <img class="principal-image" src="./assets/imgs/tv.png" alt="Imagem TV">
+            <div class="principal-video-container">
+              <video class="principal-video" autoplay="" muted="" loop="">
+                <source src="./assets/videos/video1.m4v" type="video/mp4">
+              </video>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container-texto">
-        <h1>Baixe séries para assistir offline.</h1>
-        <h2>Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
-      </div>
     </section>
-    <!-- Seção Offline - Fim -->
+    <!-- Div Aproveite na TV - Fim -->
 
-    <!-- Seção Tempo - Início -->
-    <section class="container-tempo">
-      <div class="container-texto">
-        <h1>Assista quando quiser.</h1>
-        <h2>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
+    <!-- Div Offline - Início -->
+    <div class="principal">
+      <div class="subprincipal div-subprincipal">
+        <div class="principal-details">
+          <h1 class="principal-title">Baixe séries para assistir offline.</h1>
+          <h2 class="principal-subtitle">Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
+        </div>
+        <div class="principal-image-container">
+          <div class="subprincipal-image-container">
+            <img class="principal-image" src="./assets/imgs/mobile.jpg" alt="Imagem Smartphone">
+            <div class="principal-poster-container">
+              <div class="poster-container">
+                <img class="poster" src="./assets/imgs/boxshot.png" alt="Imagem de Capa">
+              </div>
+              <div class="poster-details">
+                <h4>Stranger Things</h4>
+                <h5> <a href="#">Download em andamento...</a> </h5>
+              </div>
+              <div class="gif-container">
+                <img class="gif" src="./assets/imgs/download-icon.gif" alt="Seta download">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container-img-animacao">
-        <img src="./assets/imgs/devices.png" alt="Dispositivos Visuais">
-        <video class="video-2" autoplay="" playsinline="" muted="" loop="">
-          <source src="./assets/videos/video2.m4v" type="video/mp4">
-        </video>
-      </div>
-    </section>
-    <!-- Seção Tempo - Fim -->
+    </div>
+    <!-- Div Offline - Fim -->
 
-    <!-- Seção Perfil - Início -->
-    <section class="container-perfil-infantil">
-      <div class="container-img-kids">
-        <img src="./assets/imgs/kids.png" alt="Crianças">
+    <!-- Div Tempo - Início -->
+    <div class="principal">
+      <div class="subprincipal">
+        <div class="principal-details">
+          <h1 class="principal-title">Assista quando quiser.</h1>
+          <h2 class="principal-subtitle">Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
+        </div>
+        <div class="principal-image-container">
+          <img class="principal-image" src="./assets/imgs/devices.png" alt="Dispositivos Visuais">
+          <div class="principal-video-container">
+            <video class="principal-video" autoplay="" muted="" loop="">
+              <source src="./assets/videos/video2.m4v" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
-      <div class="container-texto">
-        <h1>Crie perfis para crianças.</h1>
-        <h2>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a
-          mais por isso.</h2>
-      </div>
-    </section>
-    <!-- Seção Perfil - Fim -->
+    </div>
+    <!-- Div Tempo - Fim -->
 
-    <!-- Seção Perguntas - Início -->
+    <!-- Div Perfil - Início -->
+    <div class="principal">
+      <div class="subprincipal div-subprincipal">
+        <div class="principal-details">
+          <h1 class="principal-title">Crie perfis para crianças.</h1>
+          <h2 class="principal-subtitle">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar
+          a mais por isso.</h2>
+        </div>
+        <div class="principal-image-container">
+          <img class="principal-image" src="./assets/imgs/kids.png" alt="Crianças">
+        </div>
+      </div>
+    </div>
+    <!-- Div Perfil - Fim -->
+
+    <!-- Div Perguntas - Início -->
     <div class="separacao"></div>
     <section class="container-perguntas">
       <div class="div-container-texto">
@@ -225,20 +250,24 @@
             </div>
           </li>
         </ul>
-        <form class="formulario-email" method="get">
-          <h2>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h2>
-          <div class="div-formulario-email">
-            <div>
-              <input type="text" name="email" placeholder="Email">
+        <div>
+          <form class="form-container" method="get">
+            <p class="description-container">Pronto para assistir? Informe seu email para criar ou reiniciar sua
+              assinatura.</p>
+            <div class="div-inputs-container">
+              <div class="div-email">
+                <input class="div-email-input" type="text" name="email" placeholder="">
+                <label class="div-email-label">Email</label>
+              </div>
+              <div class="div-button">
+                <button class="button" type="submit">Vamos lá <i class="fa fa-thin fa-chevron-right"></i></button>
+              </div>
             </div>
-            <div>
-              <button type="submit">Vamos lá <i class="fa fa-thin fa-chevron-right"></i></button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
-    <!-- Seção Perguntas - Fim -->
+    <!-- Div Perguntas - Fim -->
   </main>
 
   <footer>
