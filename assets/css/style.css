@@ -104,23 +104,26 @@ select {
     rgba(0, 0, 0, 0.8) 100%
     );
 } 
+.first-container-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+
+}
 .container-card {
-  margin: 0 auto;
-  max-width: 950px;
   padding: 85px 0;
   position: absolute;
   top: 21%;
-  text-align: center;
-  width: 100%;
+  width: max-content;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  margin-left: 200px; 
+  text-align: center;
+  gap: 12px;
 }
 .title-container {
-  font-weight: 500;
-  font-size: 3.125rem;
+  font-weight: 600;
+  font-size: 3rem;
 }
 .subtitle-container {
   font-size: 1.625rem;
@@ -161,7 +164,7 @@ select {
   padding: 10px;
   position: absolute;
   top: 70%;
-  left: 16.8%;
+  left: 3%;
   transition: 0.5s;
 }
 .div-email-input:focus {
