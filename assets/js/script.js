@@ -1,4 +1,4 @@
-var perguntas = document.getElementsByClassName("pergunta");
+var perguntas = document.getElementsByClassName("question");
 var i;
 
 for (i = 0; i < perguntas.length; i++) {

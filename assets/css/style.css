@@ -221,10 +221,11 @@ select {
   padding: 0 1rem 0 0;
   width: 50%;
   align-items: flex-start;
+  justify-content: center;
 }
 .principal-title {
   font-size: 3.125rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 4.6rem;
   margin-bottom: 0.5rem;
 }
@@ -264,10 +265,6 @@ select {
   position: relative;
   right: 15%;
 }
-/* .smartphone {
-  width: 100%;
-  right: 50rem;
-} */
 .principal-poster-container {
   position: absolute;
   bottom: 7%;
@@ -316,75 +313,60 @@ select {
 }
 /* Div Offline - Fim*/
     
-
-
-/* Seção Tempo - Início */
-.container-tempo .container-texto {
-  padding-right: 15%;
+/* Div Tempo - Início */
+.principal2 {
+  height: 545px;
 }
-
-.container-tempo .container-img-animacao img {
-  position: absolute;
-  max-width: 100%;
-  padding-top: 8%;
+.principal-title2 {
+  margin-top: 7.6rem;;
 }
-
-.video-2 {
-  margin-left: 19%;
-  margin-top: 14%;
-  width: 61%;
+.devices {
+  width: 565px;
+  position: relative;
+  height: auto;
 }
-/* Seção Tempo - Fim */
-
+.video2 {
+  width: 100%;
+  margin-top: -13%;
+  margin-left: 9%;
+}
+.principal:last-child {
+  margin-bottom: 50px;
+}
+/* Div Tempo - Fim */
 
 /* Seção Perguntas - Início */
-.separacao {
-  background: transparent;
-  border-bottom: 8px solid #222;
-  color: #fff;
-  margin-bottom: 0;
+.section-questions-container {
+  border-top: 8px solid rgb(34, 34, 34);
   padding: 50px 5%;
   position: relative;
+  border-bottom: 8px solid #222;
 }
-.container-perguntas {
-  background: transparent;
-  border-bottom: 8px solid #222;
-  color: #fff;
-  margin-bottom: 0;
-  padding: 50px 5%;
-  position: relative;
+.questions-heading {
+  font-size: 3.125rem;
+  font-weight: 500;
   text-align: center;
+  margin: 1rem 3rem;
 }
-.div-container-texto {
+.div-container-list {
   font-size: 1.625rem;
   font-weight: 400;
 }
-.div-container-texto h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-.lista-perguntas {
+.list-questions {
   display: block;
   list-style-type: disc;
+  padding-top: 15px;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
   max-width: 815px;
   margin: 1.25em auto;
 }
-.lista-perguntas-item {
+.list-questions-item {
   display: list-item;
   text-align: -webkit-match-parent;
   list-style-type: none;
 }
-.pergunta, .resposta {
+.question, .answer {
   background: #303030;
   text-align: left;
   color: inherit;
@@ -393,7 +375,7 @@ select {
   width: 100%;
   border: 0;
 }
-.pergunta {
+.question {
   margin: 8px 0 0 0;
   padding: 0.8em 2.2em 0.8em 1.2em;
   position: relative;
@@ -406,16 +388,35 @@ select {
   top: 50%;
   transform: translateY(-50%);
 }
-.resposta {
+.answer {
   display: none;
   margin-top: 1px;
   max-height: 0;
   overflow: hidden;
   transition: max-height .25s cubic-bezier(.5,0,.1,1);
 }
-.lista-perguntas .resposta span {
+.list-questions .answer span {
   display: inline-block;
   padding: 1.2em
+}
+.container-card-2 {
+  position: relative;
+  max-width: 950px;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 132px; 
+}
+.container-card-2 p {
+  font-size: 1.2rem;
+}
+.label-2 {
+  top: 55%;
+}
+.div-email-input:focus + .label-2 {
+  top: 48%;
 }
 /* Seção Perguntas - Fim */
 
@@ -448,14 +449,45 @@ select {
 .coluna {
   width: 18%;
 }
-.container-final .language {
-  width: max-content;
-  height: max-content;
-  border: 1px solid #414141;
-  color: #8c8c8c;
-  padding: 16px 5px 16px 16px;
-  border-radius: 2px;
+.last-container {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: space-between;
+  
 }
+.last-container .language {
+  border: 1px solid rgb(65, 65, 65);
+  padding: 1rem 0.5rem 1rem 1rem;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.last-container .fa-globe, .last-container .fa-caret-down {
+  color: rgb(140, 140, 140);
+}
+.last-container .fa-globe {
+  font-size: 1rem;
+  padding-right: 15px;
+}
+.last-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.last-container .select {
+  background-color: transparent;
+  color: rgb(140, 140, 140);
+  border: none;
+  font-size: 1rem;
+  padding-right: 2px;
+}
+.last-container .select:focus {
+  outline: none;
+}
+.last-container .select option {
+  background-color: transparent;
+  z-index: 3;
+} 
 .origem p {
   padding-top: 10px;
 }
@@ -463,177 +495,13 @@ select {
 
 /* Responsivo */
 @media(max-width: 949px) {
-  .vitrine {
-    display: block;
-    height: 100%;
-  }
-  /* Iniciar/Assinar */
-  .vitrine .container-assinatura {
-    position: relative;
-  }
-  .vitrine .container-assinatura h1 {
-    font-size: 3.1rem;
-    margin: 0px 98px;
-    padding-top: 10px;
-  }
- 
-  .vitrine .container-assinatura .paragrafo {
-    font-size: 1.43rem;
-    padding: 0px 145px;
-    padding: 10px 145px 10px 145px;
-  }
-  .vitrine .container-assinatura input {
-    padding: 17px;
-    width: 55%;
-  }
-  .vitrine .container-assinatura button {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 1.5%;
-    padding: 12px;
-  }
-  /* Seção Aproveite na TV */
-  main .container-aproveiteNaTV {
-    display: block;
-  }
-  .container-aproveiteNaTV {
-    height: 672px;
-    padding: 70px 45px;
-  }
-  .container-texto {
-    width: 100%;
-    text-align: center;
-    padding: 0px;
-  }
-  .container-texto h1 {
-    font-size: 2.5rem;
-  }
-  .container-texto h2 {
-    font-size: 1.25rem;
-    margin: 15px 0px 5px;
-  }
-  .container-img-animacao {
-    max-width: 100%;
-    margin-left: 130px;
-  }
-  /* Seção Offline  */
-  .container-offline {
-    flex-direction: column-reverse;
-    padding: 70px 45px;
-    height: 659px;    
-  }
-  .container-offline .container-texto {
-    padding: 0px;
-    height: 20%;
-  }
-  .container-img-smartphone {
-    height: 80%;
-  }
-  .container-img-smartphone img {
-    height: 120%;
-    margin-left: 120px;
-  }
-  
-    
-  /* Seção Tempo  */
-
-  /* Seção Perfil */
-
-  /* Seção Perguntas */
-
-  /* Seção links */
 
 }
 
 @media(max-width: 686px) {
-  /* Barra de Navegação */
-  .vitrine-topo {
-    padding: 26px 0px 0px 25px;
-  }
-  .vitrine-topo #logo {
-    height: 25px;
-  }
-  .vitrine-topo .botao-entrar {
-    position: relative;
-    right: 25px;
-    padding: 2px 10px;
-  }
-  .vitrine-topo select {
-    position: relative;
-    right: 40px;
-    padding: 2px 10px;
-  }
-  /* Iniciar/Assinar */
-  .vitrine .container-assinatura {
-    position: relative;
-    top: 60px;
-  }
-  .vitrine .container-assinatura h1 {
-    font-size: 2rem;
-    padding: 50px 50px 50px 0px;
-  }
-  .vitrine .container-assinatura h2 {
-    font-size: 1.5rem;
-  }
-  .vitrine .container-assinatura .paragrafo {
-    font-size: 1rem;
-  }
-  .vitrine .container-assinatura input {
-    padding: 14px;
-    width: 70%;
-  }
-  /* Seção Aproveite na TV */
-
-  /* Seção Offline  */
-
-  /* Seção Tempo  */
-
-  /* Seção Perfil */
-
-  /* Seção Perguntas */
-
-  /* Seção links */
   
 }
 
 @media(max-width: 346px) {
-  /* Barra de Navegação */
-  .vitrine-topo #logo {
-    height: 22px;
-  }
-  .vitrine-topo .botao-entrar {
-    padding: 1px 5px;
-  }
-  .vitrine-topo select {
-    padding: 1px 0px;
-    position: relative;
-    right: 30px;
-  }
-  /* Iniciar/Assinar */
-  .vitrine .container-assinatura h1 {
-    font-size: 1.5rem;
-  }
-  .vitrine .container-assinatura h2 {
-    font-size: 1.1rem;
-  }
-  .vitrine .container-assinatura .paragrafo {
-    font-size: 0.8rem;
-  }
-  .vitrine .container-assinatura input {
-    padding: 14px;
-    width: 70%;
-  }
-  /* Seção Aproveite na TV */
-
-  /* Seção Offline  */
-
-  /* Seção Tempo  */
-
-  /* Seção Perfil */
-
-  /* Seção Perguntas */
-
-  /* Seção links */
   
 }
