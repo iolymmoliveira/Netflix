@@ -210,7 +210,6 @@ select {
 }
 .subprincipal {
   margin: 0px 80px;
-  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -260,24 +259,33 @@ select {
 .div-subprincipal {
   flex-direction: row-reverse;
 }
+.subprincipal-image-container {
+  width: 100%;
+  position: relative;
+  right: 15%;
+}
+/* .smartphone {
+  width: 100%;
+  right: 50rem;
+} */
 .principal-poster-container {
   position: absolute;
-  bottom: 8%;
-  left: 50%;
+  bottom: 7%;
+  right: -17%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 90%;
   max-width: 21rem;
   display: flex;
   align-items: center;
   background-color: black;
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
-  height: 100px;
-  padding: 0.25rem 0.6rem;
+  height: 98px;
+  padding: 0.35rem 0.6rem;
   gap: 15px;
 }
 .poster-container {
-  width: 20%;
+  width: 18%;
 }
 .poster {
   width: 100%;
@@ -289,6 +297,7 @@ select {
 .poster-details h4 {
   font-size: 0.925rem;
   font-weight: 600;
+  margin-bottom: 2px;
 }
 .poster-details h5 a {
   text-decoration: none;
@@ -301,8 +310,9 @@ select {
   height: 100%;
 }
 .gif {
-  width: 100%;
-  height: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: 1em;
 }
 /* Div Offline - Fim*/
     
