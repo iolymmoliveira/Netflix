@@ -109,13 +109,12 @@ select {
   align-items: center;
   width: 100%;
   justify-content: space-around;
-
 }
 .container-card {
   padding: 85px 0;
   position: absolute;
   top: 21%;
-  width: max-content;
+  width: 690px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -128,6 +127,7 @@ select {
 .subtitle-container {
   font-size: 1.625rem;
   font-weight: 400;
+  letter-spacing: 0.15px;
 }
 .description-container {
   font-size: 1.2rem;  
@@ -165,7 +165,7 @@ select {
   padding: 10px;
   position: absolute;
   top: 70.5%;
-  left: 2%;
+  left: 4%;
   transition: 0.5s;
 }
 .div-email-input:focus {
@@ -228,15 +228,15 @@ select {
   justify-content: center;
 }
 .principal-title {
-  font-size: 3.125rem;
+  font-size: 3.1rem;
   font-weight: 600;
-  margin-top: 4.6rem;
+  margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
 .principal-subtitle {
   font-size: 1.625rem;
   font-weight: 400;
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
 }
 .principal-image-container {
   width: 46%;
@@ -508,8 +508,95 @@ select {
 }
 /* Seção Links - Fim */
 
-/* Responsivo */
-@media(max-width: 1280px) and (max-height: 800px) {
+/* Responsivo - Início*/
+/* TV/Extra Large - Min width 1201px*/
+@media(min-width: 1367px) {
+  /* Barra de Navegação - Início*/
+  .navigation-bar-img {
+    width: 165px;
+  }
+  /* Barra de Navegação - Fim*/
+  /*Seção Iniciar/Assinar - Início*/
+  .container-background-img, .container-background-overlay {
+    height: 733px;
+  }
+  .container-card {
+    top: 17.4%;
+  }
+  .title-container {
+    font-size: 3.825rem;
+    letter-spacing: 0.3px;
+  }
+  .div-email-input {
+    height: 73px;
+    width: 518px;
+    left: -2%;
+  }
+  .div-email-label {
+    left: -1.4%;
+    top: 72.5%;
+  }
+  .button {
+    height: 73px;
+    width: 192px;
+    position: relative;
+    left: -6%;
+  }
+  /*Seção Iniciar/Assinar - Fim*/
+  /* Div Aproveite na TV - Início */
+  .principal {
+    justify-content: center;
+  }
+  .principal-details {
+    padding: 0;
+  }
+  .principal-image-container {
+    width: 48%;
+    left: 2.2%;
+    bottom: 5%;
+    /* position: relative; */
+  }
+  /* Div Aproveite na TV - Fim */
+  /* Div Offline - Início */
+  .subprincipal-image-container {
+    width: 95%;
+    right: 18.5%;
+  }
+  /* Div Offline - Fim */
+  /* Div Tempo - Início */
+  .devices {
+    width: 558px;   
+    padding-top: 3%; 
+  }
+  .video2 {
+    width: 95%;
+    margin-top: -10%;
+    margin-left: 6%;
+  }
+  /* Div Tempo - Fim */
+  /* Div Perfil - Início */
+  .kids-container {
+    width: 46%;
+    top: 8%;
+    left: -0.1%;
+  }
+  /* Div Perfil - Fim */
+  /* Seção Perguntas - Início */
+  .container-card-2 {
+    right: -15.2%;
+  }
+  .container-card-2 p {
+    padding-left: 15px;
+  }
+  .label-2 {
+    top: 55%;
+    left: 11.5%;
+  }
+  /* Seção Perguntas - Fim */
+}
+
+/* Desktop - Min width 1024px - Max width 1200px - 1280*/
+@media(min-width: 1024px) and (max-width: 1366px) {
   /*Seção Iniciar/Assinar - Início*/
   .container-background-img, .container-background-overlay {
     height: 693px;
@@ -583,14 +670,68 @@ select {
   /* Seção Links - Fim */
 }
 
-@media(max-width: 949px) {
-
+/* Laptop */
+@media(min-width: 769px) and (max-width: 1023px) {
+/* Barra de Navegação - Início*/
+.navigation-bar-img {
+  width: 105px;
+  margin-left: 3rem;
 }
-
-@media(max-width: 686px) {
+/* Barra de Navegação - Fim*/
+  /*Seção Iniciar/Assinar - Início*/
+.container-background-img, .container-background-overlay {
+  height: 715px;
+}
+.container-card {
+  top: 12.4%;
+}
+.description-container {
+  font-size: 1.445rem;  
+}
+.form-container {
+  max-width: 445px;
+  padding-top: 0.25rem;
+}
+.div-inputs-container {
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 12px;
+}
+.div-email-input {
+  height: 65px;
+  width: 500px;
+  left: -5.5%;
+}
+.div-email-label {
+  top: 64%;
+  left: 14%;
+}
+.button {
+  font-size: 0.955rem;
+  height: 40px;
+  width: 112px;
+  margin-right: 58px;
+}
+.fa {
+  font-size: 0.725rem;
+  padding-left: 2px;
+}
+/*Seção Iniciar/Assinar - Fim*/
+/* Div Aproveite na TV - Início */
+.principal {
+  height: 670px;
+}
+.subprincipal {
+  flex-direction: column;
+}
+/* Div Aproveite na TV - Fim */
+}
+/* Tablet */
+@media(min-width: 481px) and (max-width: 768px) {
   
 }
-
-@media(max-width: 346px) {
+/* Mobile */
+@media(min-width: 320px) and (max-width: 480px) {
   
 }
+/* Responsivo - Fim*/
