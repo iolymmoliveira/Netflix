@@ -1,4 +1,4 @@
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,17 +18,20 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 2;
-  padding-top: 1.75rem; 
+  padding-top: 1.75rem;
 }
+
 .navigation-bar-img {
   width: 130px;
   height: 100%;
   margin-left: 3.5rem;
 }
- #logo {
+
+#logo {
   width: 100%;
   height: 100%;
 }
+
 .navigation-bar-item {
   display: flex;
   width: 230px;
@@ -36,24 +39,30 @@ body {
   justify-content: space-between;
   margin-right: 3.5rem;
 }
+
 .navigation-item {
   display: flex;
   gap: 35px;
 }
+
 .language {
   border: 1px solid rgb(255, 255, 255);
   padding: 0.5rem 0.6rem;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.4);
 }
-.fa-globe, .fa-caret-down {
+
+.fa-globe,
+.fa-caret-down {
   color: rgb(255, 255, 255);
 }
+
 select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
 .select {
   background-color: transparent;
   color: rgb(255, 255, 255);
@@ -61,13 +70,16 @@ select {
   font-size: 0.875rem;
   font-weight: 400;
 }
+
 .select:focus {
   outline: none;
 }
+
 .select option {
   background-color: rgb(179, 179, 179);
   z-index: 3;
-} 
+}
+
 .signin-button {
   background-color: rgb(229, 9, 20);
   color: rgb(255, 255, 255);
@@ -78,6 +90,7 @@ select {
   padding: 7px 17px;
   border-radius: 3px;
 }
+
 /* Barra de Navegação - Fim*/
 
 /*Main*/
@@ -86,30 +99,32 @@ select {
   width: 100%;
   height: 100vh;
 }
+
 .img-background {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .container-background-overlay {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(
-    to top, 
-    rgba(0, 0, 0, 0.8),
-    transparent 60%,
-    rgba(0, 0, 0, 0.8) 100%
-    );
-} 
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8),
+      transparent 60%,
+      rgba(0, 0, 0, 0.8) 100%);
+}
+
 .first-container-card {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
 }
+
 .container-card {
   padding: 85px 0;
   position: absolute;
@@ -120,18 +135,22 @@ select {
   text-align: center;
   gap: 15px;
 }
+
 .title-container {
   font-weight: 600;
   font-size: 3rem;
 }
+
 .subtitle-container {
   font-size: 1.625rem;
   font-weight: 400;
   letter-spacing: 0.15px;
 }
+
 .description-container {
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
 }
+
 .form-container {
   margin: 0 auto;
   max-width: 950px;
@@ -139,6 +158,7 @@ select {
   display: flex;
   flex-direction: column;
 }
+
 .div-inputs-container {
   display: flex;
   flex-direction: row;
@@ -147,6 +167,7 @@ select {
   text-align: center;
   margin-top: 20px;
 }
+
 .div-email-input {
   height: 60px;
   width: 450px;
@@ -157,10 +178,11 @@ select {
   transition: font .1s ease, top .1s ease, transform .1s ease;
   position: relative;
 }
+
 .div-email-label {
   font-size: 1rem;
   font-weight: 400;
-  color:rgb(140, 140, 140);
+  color: rgb(140, 140, 140);
   text-align: left;
   padding: 10px;
   position: absolute;
@@ -168,6 +190,7 @@ select {
   left: 4%;
   transition: 0.5s;
 }
+
 .div-email-input:focus {
   border: 1px solid #0071eb;
   border-bottom-left-radius: 2px;
@@ -176,16 +199,19 @@ select {
   outline: none;
   box-shadow: none;
 }
-.div-email-input:focus + .div-email-label {
+
+.div-email-input:focus+.div-email-label {
   top: 68%;
   font-size: 0.725rem;
   font-weight: 700;
 }
+
 .button:hover {
   cursor: pointer;
   background: rgb(244, 6, 18);
   box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
 }
+
 .button {
   background-color: rgb(229, 9, 20);
   height: 60px;
@@ -199,10 +225,12 @@ select {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+
 .fa {
   font-size: 1.25rem;
   padding-left: 5px;
 }
+
 /*Seção Iniciar/Assinar - Fim*/
 
 /* Div Aproveite na TV - Início */
@@ -212,6 +240,7 @@ select {
   padding: 70px 45px;
   height: 480px;
 }
+
 .subprincipal {
   margin: 0px 80px;
   display: flex;
@@ -219,6 +248,7 @@ select {
   justify-content: space-between;
   max-width: 1100px;
 }
+
 .principal-details {
   flex: 0 1 auto;
   height: 100%;
@@ -227,24 +257,29 @@ select {
   align-items: flex-start;
   justify-content: center;
 }
+
 .principal-title {
   font-size: 3.1rem;
   font-weight: 600;
   margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
+
 .principal-subtitle {
   font-size: 1.625rem;
   font-weight: 400;
   margin-top: 1.3rem;
 }
+
 .principal-image-container {
   width: 46%;
   position: relative;
 }
+
 .principal-image {
   width: 100%;
 }
+
 .principal-video-container {
   position: absolute;
   width: 100%;
@@ -255,20 +290,24 @@ select {
   max-height: 54%;
   z-index: -2;
 }
+
 .principal-video {
   width: 100%;
 }
+
 /* Div Aproveite na TV - Fim */
 
 /* Div Offline - Início */
 .div-subprincipal {
   flex-direction: row-reverse;
 }
+
 .subprincipal-image-container {
   width: 100%;
   position: relative;
   right: 15%;
 }
+
 .principal-poster-container {
   position: absolute;
   bottom: 7%;
@@ -285,55 +324,67 @@ select {
   padding: 0.35rem 0.6rem;
   gap: 15px;
 }
+
 .poster-container {
   width: 18%;
 }
+
 .poster {
   width: 100%;
   height: 100%;
 }
+
 .poster-details {
   width: 60%;
 }
+
 .poster-details h4 {
   font-size: 0.925rem;
   font-weight: 600;
   margin-bottom: 2px;
 }
+
 .poster-details h5 a {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
   color: rgb(0, 113, 235);
 }
+
 .gif-container {
   width: 20%;
   height: 100%;
 }
+
 .gif {
   width: 3em;
   height: 3em;
   margin-top: 1em;
 }
+
 /* Div Offline - Fim*/
-    
+
 /* Div Tempo - Início */
 .principal2 {
   height: 545px;
 }
+
 .principal-title2 {
-  margin-top: 7.6rem;;
+  margin-top: 7.6rem;
 }
+
 .devices {
   width: 565px;
   position: relative;
   height: auto;
 }
+
 .video2 {
   width: 100%;
   margin-top: -13%;
   margin-left: 9%;
 }
+
 .principal:last-child {
   margin-bottom: 50px;
 }
@@ -344,7 +395,7 @@ select {
   border-top: 8px solid rgb(34, 34, 34);
   padding: 50px 5%;
   position: relative;
-  border-bottom: 8px solid #222;
+  border-bottom: 8px solid rgb(34, 34, 34);
 }
 .questions-heading {
   font-size: 3.08rem;
@@ -370,7 +421,8 @@ select {
   text-align: -webkit-match-parent;
   list-style-type: none;
 }
-.question, .answer {
+.question,
+.answer {
   background: #303030;
   text-align: left;
   color: inherit;
@@ -386,7 +438,8 @@ select {
   display: block;
   cursor: pointer;
 }
-.fa-plus, .fa-xmark {
+.fa-plus,
+.fa-xmark {
   position: absolute;
   right: 1em;
   top: 50%;
@@ -397,7 +450,7 @@ select {
   margin-top: 1px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .25s cubic-bezier(.5,0,.1,1);
+  transition: max-height .25s cubic-bezier(.5, 0, .1, 1);
 }
 .list-questions .answer span {
   display: inline-block;
@@ -411,7 +464,7 @@ select {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  margin-left: 132px; 
+  margin-left: 132px;
 }
 .container-card-2 p {
   font-size: 1.2rem;
@@ -420,7 +473,7 @@ select {
   top: 55%;
   left: 16.5%;
 }
-.div-email-input:focus + .label-2 {
+.div-email-input:focus+.label-2 {
   top: 48%;
 }
 /* Seção Perguntas - Fim */
@@ -469,7 +522,7 @@ select {
   gap: 35px;
   align-items: center;
   justify-content: space-between;
-  
+
 }
 .last-container .language {
   border: 1px solid rgb(65, 65, 65);
@@ -477,7 +530,8 @@ select {
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.4);
 }
-.last-container .fa-globe, .last-container .fa-caret-down {
+.last-container .fa-globe,
+.last-container .fa-caret-down {
   color: rgb(140, 140, 140);
 }
 .last-container .fa-globe {
@@ -502,78 +556,94 @@ select {
 .last-container .select option {
   background-color: transparent;
   z-index: 3;
-} 
+}
 .origem p {
   padding-top: 10px;
 }
+
 /* Seção Links - Fim */
 
 /* Responsivo - Início*/
 /* TV/Extra Large - Min width 1201px*/
 @media(min-width: 1367px) {
+
   /* Barra de Navegação - Início*/
   .navigation-bar-img {
     width: 165px;
   }
+
   /* Barra de Navegação - Fim*/
   /*Seção Iniciar/Assinar - Início*/
-  .container-background-img, .container-background-overlay {
+  .container-background-img,
+  .container-background-overlay {
     height: 733px;
   }
+
   .container-card {
     top: 17.4%;
   }
+
   .title-container {
     font-size: 3.825rem;
     letter-spacing: 0.3px;
   }
+
   .div-email-input {
     height: 73px;
     width: 518px;
     left: -2%;
   }
+
   .div-email-label {
     left: -1.4%;
     top: 72.5%;
   }
+
   .button {
     height: 73px;
     width: 192px;
     position: relative;
     left: -6%;
   }
+
   /*Seção Iniciar/Assinar - Fim*/
   /* Div Aproveite na TV - Início */
   .principal {
     justify-content: center;
   }
+
   .principal-details {
     padding: 0;
   }
+
   .principal-image-container {
     width: 48%;
     left: 2.2%;
     bottom: 5%;
     /* position: relative; */
   }
+
   /* Div Aproveite na TV - Fim */
   /* Div Offline - Início */
   .subprincipal-image-container {
     width: 95%;
     right: 18.5%;
   }
+
   /* Div Offline - Fim */
   /* Div Tempo - Início */
   .devices {
-    width: 558px;   
-    padding-top: 3%; 
+    width: 558px;
+    padding-top: 3%;
   }
+
   .video2 {
     width: 95%;
     margin-top: -10%;
     margin-left: 6%;
   }
   /* Div Tempo - Fim */
+
   /* Div Perfil - Início */
   .kids-container {
     width: 46%;
@@ -581,6 +651,7 @@ select {
     left: -0.1%;
   }
   /* Div Perfil - Fim */
+
   /* Seção Perguntas - Início */
   .container-card-2 {
     right: -15.2%;
@@ -597,23 +668,29 @@ select {
 
 /* Desktop - Min width 1024px - Max width 1200px - 1280*/
 @media(min-width: 1024px) and (max-width: 1366px) {
+
   /*Seção Iniciar/Assinar - Início*/
-  .container-background-img, .container-background-overlay {
+  .container-background-img,
+  .container-background-overlay {
     height: 693px;
   }
+
   /*Seção Iniciar/Assinar - Fim*/
   /* Div Aproveite na TV - Início */
   .subprincipal {
     margin: 0px 45px;
   }
+
   .principal-details {
     padding: 0;
   }
+
   .principal-image-container {
     width: 49%;
     left: 4%;
     bottom: 6%;
   }
+
   /* Div Aproveite na TV - Fim */
   /* Div Offline - Início */
   .subprincipal-image-container {
@@ -621,41 +698,50 @@ select {
     right: 22.5%;
     margin-top: 4%;
   }
+
   .principal-poster-container {
     gap: 10px;
   }
-  .poster-details{
+
+  .poster-details {
     width: 70%;
   }
+
   .poster-details h4 {
     font-size: 1.1rem;
     font-weight: lighter;
   }
+
   .poster-details h5 a {
     font-size: 0.825rem;
-    font-weight: 600;  
-    letter-spacing: 0.65px;  
+    font-weight: 600;
+    letter-spacing: 0.65px;
   }
+
   /* Div Offline - Fim */
   /* Div Tempo - Início */
   .video2 {
     width: 90%;
     margin-top: -10%;
   }
+
   /* Div Tempo - Fim */
   /* Div Perfil - Início */
   .kids-container {
     left: -0.3%;
     bottom: 2%;
   }
+
   .kids {
     width: 95%;
   }
+
   /* Div Perfil - Fim */
   /* Seção Perguntas - Início */
   .container-card-2 {
     right: 2.5%;
   }
+
   /* Seção Perguntas - Fim */
   /* Seção Links - Início */
   /* .container-footer {
@@ -664,74 +750,210 @@ select {
   .container-footer h3 {
     font-size: 1rem;
   }
+
   .container-footer p {
     font-size: 0.817rem;
   }
+
   /* Seção Links - Fim */
 }
 
 /* Laptop */
 @media(min-width: 769px) and (max-width: 1023px) {
-/* Barra de Navegação - Início*/
-.navigation-bar-img {
-  width: 105px;
-  margin-left: 3rem;
-}
-/* Barra de Navegação - Fim*/
+  /* Barra de Navegação - Início*/
+  .navigation-bar-img {
+    width: 105px;
+    margin-left: 3rem;
+  }
+  /* Barra de Navegação - Fim*/
   /*Seção Iniciar/Assinar - Início*/
-.container-background-img, .container-background-overlay {
-  height: 715px;
+  .container-background-img,
+  .container-background-overlay {
+    height: 715px;
+  }
+  .container-card {
+    top: 12.4%;
+  }
+  .description-container {
+    font-size: 1.445rem;
+  }
+  .form-container {
+    max-width: 445px;
+    padding-top: 0.25rem;
+  }
+  .div-inputs-container {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 12px;
+  }
+  .div-email-input {
+    height: 65px;
+    width: 500px;
+    left: -5.5%;
+  }
+  .div-email-label {
+    top: 64%;
+    left: 14%;
+  }
+  .button {
+    font-size: 0.955rem;
+    height: 40px;
+    width: 112px;
+    margin-right: 58px;
+  }
+  .fa {
+    font-size: 0.725rem;
+    padding-left: 2px;
+  }
+  /*Seção Iniciar/Assinar - Fim*/
+  /* Div Aproveite na TV - Início */
+  .principal {
+    height: 673px;
+    text-align: center;
+    padding: 70px 5px;
+  }
+  .subprincipal {
+    flex-direction: column;
+    /* height: max-content; */
+    margin: 0 auto;
+  }
+  .principal-details {
+    width: 100%;
+    padding: 0 40px;
+    height: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    z-index: 3;
+  }
+  .principal-title {
+    font-size: 2.425rem;
+    margin-top: 0.2rem;
+  }
+  .principal-subtitle {
+    width: 100%;
+    font-size: 1.275rem;
+    font-weight: 400;
+    margin-top: 0.7rem;
+  }
+  .principal-image-container {
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+  }
+  .principal-image {
+    width: 600px;
+    position: relative;
+    margin-top: -12%;
+  }
+  /* Div Aproveite na TV - Fim */
+  /* Div Offline - Início */
+  .subprincipal-image-container {
+    right: -0.2%;
+    bottom: 4%;
+  }
+  .principal-poster-container {
+    bottom: 9%;
+    right: -14.6%;
+    width: 100%;
+    max-width: 24.3rem;
+    height: 83px;
+  }
+  .poster-container {
+    width: 13.5%;
+  }
+  .poster-details h4,
+  .poster-details h5 {
+    text-align: start;
+  }
+  .poster-details h4 {
+    font-size: 1rem;
+  }
+  .poster-details h5 a {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .gif {
+    margin-left: 1.2rem;
+  }
+  /* Div Offline - Fim */
+  /* Div Tempo - Início */
+  .video2 {
+    width: 85%;
+    margin-top: -23%;
+    margin-left: 1%;
+  }
+  /* Div Tempo - Fim */
+  /* Div Perfil - Início */
+  .kids-container {
+    top: 8%;
+  }
+  /* Div Perfil - Fim */
+  /* Seção Perguntas - Início */
+  .section-questions-container {
+    padding: 50px 9.6%;
+  }
+  .questions-heading {
+    font-size: 2.45rem;
+    margin: 1.3rem 3rem;
+  }
+  .div-container-list {
+    font-size: 1.225rem;
+    /* font-weight: 400; */
+  }
+  .list-questions {
+    padding-top: 0;
+  }
+  .question {
+    padding: 0.9em 2.2em 0.9em 1.2em;
+  }
+  .fa-plus, .fa-xmark {
+    font-size: 1.5rem;
+  }
+  .container-card-2 {
+    padding: 5px 0;
+    gap: 15px;
+    margin-left: 2px;
+    margin-bottom: 25px;
+  }
+  .container-card-2 p {
+    font-size: 1.45rem;
+    text-align: center;
+  }
+  .container-card-2 .div-email-input {
+    margin-top: 3px;
+    height: 60px;
+  }
+  .label-2 {
+    top: 45%;
+    left: 15%;
+  }
+  /* Seção Perguntas - Fim */
+  /* Seção Links - Início */
+  .container-footer {
+    padding: 70px 85px 10px 85px;
+  }
+  .container-footer h3 {
+    padding-bottom: 8px;
+  }
+  .container-footer p {
+    margin-bottom: 16.5px;
+  }
+  .container-colunas {
+    gap: 0;
+  }
+  .coluna {
+    width: 25%;
+  }
+  /* Seção Links - Fim */
 }
-.container-card {
-  top: 12.4%;
-}
-.description-container {
-  font-size: 1.445rem;  
-}
-.form-container {
-  max-width: 445px;
-  padding-top: 0.25rem;
-}
-.div-inputs-container {
-  flex-direction: column;
-  margin-top: 10px;
-  gap: 12px;
-}
-.div-email-input {
-  height: 65px;
-  width: 500px;
-  left: -5.5%;
-}
-.div-email-label {
-  top: 64%;
-  left: 14%;
-}
-.button {
-  font-size: 0.955rem;
-  height: 40px;
-  width: 112px;
-  margin-right: 58px;
-}
-.fa {
-  font-size: 0.725rem;
-  padding-left: 2px;
-}
-/*Seção Iniciar/Assinar - Fim*/
-/* Div Aproveite na TV - Início */
-.principal {
-  height: 670px;
-}
-.subprincipal {
-  flex-direction: column;
-}
-/* Div Aproveite na TV - Fim */
-}
+
 /* Tablet */
 @media(min-width: 481px) and (max-width: 768px) {
   
 }
+
 /* Mobile */
-@media(min-width: 320px) and (max-width: 480px) {
-  
-}
+@media(min-width: 320px) and (max-width: 480px) {}
+
 /* Responsivo - Fim*/
