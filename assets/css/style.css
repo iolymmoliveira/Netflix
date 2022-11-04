@@ -9,7 +9,6 @@ body {
   color: rgb(255, 255, 255);
   font-family: 'Gotham', sans-serif;
 }
-
 /* Barra de Navegação - Início*/
 .navigation-bar {
   position: absolute;
@@ -20,18 +19,15 @@ body {
   z-index: 2;
   padding-top: 1.75rem;
 }
-
 .navigation-bar-img {
   width: 130px;
   height: 100%;
   margin-left: 3.5rem;
 }
-
 #logo {
   width: 100%;
   height: 100%;
 }
-
 .navigation-bar-item {
   display: flex;
   width: 230px;
@@ -39,30 +35,25 @@ body {
   justify-content: space-between;
   margin-right: 3.5rem;
 }
-
 .navigation-item {
   display: flex;
   gap: 35px;
 }
-
 .language {
   border: 1px solid rgb(255, 255, 255);
   padding: 0.5rem 0.6rem;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.4);
 }
-
 .fa-globe,
 .fa-caret-down {
   color: rgb(255, 255, 255);
 }
-
 select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
 .select {
   background-color: transparent;
   color: rgb(255, 255, 255);
@@ -70,16 +61,13 @@ select {
   font-size: 0.875rem;
   font-weight: 400;
 }
-
 .select:focus {
   outline: none;
 }
-
 .select option {
   background-color: rgb(179, 179, 179);
   z-index: 3;
 }
-
 .signin-button {
   background-color: rgb(229, 9, 20);
   color: rgb(255, 255, 255);
@@ -90,7 +78,6 @@ select {
   padding: 7px 17px;
   border-radius: 3px;
 }
-
 /* Barra de Navegação - Fim*/
 
 /*Main*/
@@ -99,13 +86,11 @@ select {
   width: 100%;
   height: 100vh;
 }
-
 .img-background {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .container-background-overlay {
   position: absolute;
   inset: 0;
@@ -117,14 +102,12 @@ select {
       transparent 60%,
       rgba(0, 0, 0, 0.8) 100%);
 }
-
 .first-container-card {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
 }
-
 .container-card {
   padding: 85px 0;
   position: absolute;
@@ -135,22 +118,18 @@ select {
   text-align: center;
   gap: 15px;
 }
-
 .title-container {
   font-weight: 600;
   font-size: 3rem;
 }
-
 .subtitle-container {
   font-size: 1.625rem;
   font-weight: 400;
   letter-spacing: 0.15px;
 }
-
 .description-container {
   font-size: 1.2rem;
 }
-
 .form-container {
   margin: 0 auto;
   max-width: 950px;
@@ -158,7 +137,6 @@ select {
   display: flex;
   flex-direction: column;
 }
-
 .div-inputs-container {
   display: flex;
   flex-direction: row;
@@ -167,7 +145,6 @@ select {
   text-align: center;
   margin-top: 20px;
 }
-
 .div-email-input {
   height: 60px;
   width: 450px;
@@ -178,7 +155,6 @@ select {
   transition: font .1s ease, top .1s ease, transform .1s ease;
   position: relative;
 }
-
 .div-email-label {
   font-size: 1rem;
   font-weight: 400;
@@ -190,7 +166,6 @@ select {
   left: 4%;
   transition: 0.5s;
 }
-
 .div-email-input:focus {
   border: 1px solid #0071eb;
   border-bottom-left-radius: 2px;
@@ -199,19 +174,16 @@ select {
   outline: none;
   box-shadow: none;
 }
-
 .div-email-input:focus+.div-email-label {
   top: 68%;
   font-size: 0.725rem;
   font-weight: 700;
 }
-
 .button:hover {
   cursor: pointer;
   background: rgb(244, 6, 18);
   box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
 }
-
 .button {
   background-color: rgb(229, 9, 20);
   height: 60px;
@@ -225,12 +197,10 @@ select {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-
 .fa {
   font-size: 1.25rem;
   padding-left: 5px;
 }
-
 /*Seção Iniciar/Assinar - Fim*/
 
 /* Div Aproveite na TV - Início */
@@ -240,7 +210,6 @@ select {
   padding: 70px 45px;
   height: 480px;
 }
-
 .subprincipal {
   margin: 0px 80px;
   display: flex;
@@ -248,7 +217,6 @@ select {
   justify-content: space-between;
   max-width: 1100px;
 }
-
 .principal-details {
   flex: 0 1 auto;
   height: 100%;
@@ -257,29 +225,24 @@ select {
   align-items: flex-start;
   justify-content: center;
 }
-
 .principal-title {
   font-size: 3.1rem;
   font-weight: 600;
   margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
-
 .principal-subtitle {
   font-size: 1.625rem;
   font-weight: 400;
   margin-top: 1.3rem;
 }
-
 .principal-image-container {
   width: 46%;
   position: relative;
 }
-
 .principal-image {
   width: 100%;
 }
-
 .principal-video-container {
   position: absolute;
   width: 100%;
@@ -290,24 +253,20 @@ select {
   max-height: 54%;
   z-index: -2;
 }
-
 .principal-video {
   width: 100%;
 }
-
 /* Div Aproveite na TV - Fim */
 
 /* Div Offline - Início */
 .div-subprincipal {
   flex-direction: row-reverse;
 }
-
 .subprincipal-image-container {
   width: 100%;
   position: relative;
   right: 15%;
 }
-
 .principal-poster-container {
   position: absolute;
   bottom: 7%;
@@ -324,67 +283,55 @@ select {
   padding: 0.35rem 0.6rem;
   gap: 15px;
 }
-
 .poster-container {
   width: 18%;
 }
-
 .poster {
   width: 100%;
   height: 100%;
 }
-
 .poster-details {
   width: 60%;
 }
-
 .poster-details h4 {
   font-size: 0.925rem;
   font-weight: 600;
   margin-bottom: 2px;
 }
-
 .poster-details h5 a {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
   color: rgb(0, 113, 235);
 }
-
 .gif-container {
   width: 20%;
   height: 100%;
 }
-
 .gif {
   width: 3em;
   height: 3em;
   margin-top: 1em;
 }
-
 /* Div Offline - Fim*/
 
 /* Div Tempo - Início */
 .principal2 {
   height: 545px;
 }
-
 .principal-title2 {
   margin-top: 7.6rem;
 }
-
 .devices {
   width: 565px;
   position: relative;
   height: auto;
 }
-
 .video2 {
   width: 100%;
   margin-top: -13%;
   margin-left: 9%;
 }
-
 .principal:last-child {
   margin-bottom: 50px;
 }
@@ -574,7 +521,6 @@ select {
 .origem p {
   padding-top: 10px;
 }
-
 /* Seção Links - Fim */
 
 /* Responsivo - Início*/
@@ -1165,5 +1111,242 @@ select {
 }
 
 /* Mobile */
-@media(min-width: 320px) and (max-width: 480px) {}
+@media(min-width: 320px) and (max-width: 480px) {
+  /* Barra de Navegação - Início*/
+  .navigation-bar {
+    padding-top: 2.75rem;
+  }
+  .navigation-bar-img {
+    width: 90px;
+    margin-left: 1.2rem;
+  }
+  .navigation-bar-item {
+    width: 183px;
+    margin-right: 1.2rem;
+  }
+  .language {
+    border: 1.4px solid rgb(255, 255, 255);
+    padding: 0.2rem 0.4rem 0.3rem 0.3rem;
+  }
+  .fa-globe {
+    padding-left: 4px;
+    padding-top: 4px;
+  }
+  .fa-caret-down {
+    padding-right: 2px;
+  }
+  .signin-button {
+    font-size: 0.875rem;
+    padding: 0 8px;
+  }
+  /* Barra de Navegação - Fim*/
+  /*Seção Iniciar/Assinar - Início*/
+  .container-background-img,
+  .container-background-overlay {
+    height: 532px;
+  }
+  .container-card {
+    padding: 32px 50px;
+    top: 16%;
+    max-width: 440px;
+    gap: 15px;
+  }
+  .title-container {
+    font-size: 1.725rem;
+  }
+  .subtitle-container {
+    font-size: 1.125rem;
+  }
+  .description-container {
+    font-size: 1.125rem;
+    letter-spacing: 0.15px;
+  }
+  .form-container {
+    max-width: 300px;
+    padding-top: 0.8rem;
+  }
+  .div-inputs-container {
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 12px;
+  }
+  .div-email-input {
+    height: 50px;
+    width: 350px;
+    left: -7%;
+  }
+  .div-email-label {
+    font-size: 0.9rem;
+    top: 67%;
+    left: 10%;
+  }
+  .button {
+    font-size: 0.955rem;
+    height: 40px;
+    width: 112px;
+    margin-right: 55px;
+    margin-left: 3px;
+  }
+  .fa {
+    font-size: 0.725rem;
+    padding-left: 2px;
+  }
+  /*Seção Iniciar/Assinar - Fim*/
+  /* Div Aproveite na TV - Início */
+  .principal {
+    height: 472px;
+    padding: 50px 20px;
+  }
+  .subprincipal {
+    flex-direction: column;
+    margin: 0 0;
+    max-width: 480px;
+    width: 350px;
+    height: 100%;
+  }
+  .principal-details {
+    width: 100%;
+    padding: 0 0;
+    height: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    z-index: 3;
+  }
+  .principal-title {
+    font-size: 1.6rem;
+    margin-top: 0.1rem;
+  }
+  .principal-subtitle {
+    width: 100%;
+    font-size: 1.145rem;
+    font-weight: 400;
+    margin-top: 0.9rem;
+  }
+  .principal-image-container {
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+  }
+  .principal-image {
+    width: 350px;
+    position: relative;
+    margin-top: -12%;
+  }
+  .principal-video-container {
+    top: 5%;
+  }
+  /* Div Aproveite na TV - Fim */
+  /* Div Offline - Início */
+  .subprincipal-image-container {
+    right: -0.2%;
+    bottom: 4%;
+  }
+  .principal-poster-container {
+    bottom: 7%;
+    left: 50%;
+    width: 100%;
+    max-width: 16.5rem;
+    height: 72px;
+  }
+  .poster-container {
+    width: 16.5%;
+  }
+  .poster-details h4,
+  .poster-details h5 {
+    text-align: start;
+  }
+  .poster-details h4 {
+    font-size: 0.9rem;
+  }
+  .poster-details h5 a {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .gif {
+    margin-left: 0;
+    margin-top: 0.2em;
+  }
+  /* Div Offline - Fim */
+  /* Div Tempo - Início */
+  .devices {
+    top: 0;
+  }
+  .video2 {
+    width: 85%;
+    margin-top: -10%;
+    margin-left: 7%;
+  }
+  /* Div Tempo - Fim */
+  /* Div Perfil - Início */
+  .kids-container {
+    top: 8%;
+  }
+  /* Div Perfil - Fim */
+  /* Seção Perguntas - Início */
+  .section-questions-container {
+    padding: 50px 0;
+  }
+  .questions-heading {
+    font-size: 1.6rem;
+    margin: 0.8rem 1rem;
+  }
+  .div-container-list {
+    font-size: 1.135rem;
+  }
+  .list-questions {
+    padding-top: 0;
+  }
+  .question {
+    padding: 0.9em 2.2em 0.9em 1.2em;
+  }
+  .fa-plus, .fa-xmark {
+    font-size: 1.2rem;
+    padding-right: 2px;
+  }
+  .container-card-2 {
+    padding: 0 0;
+    gap: 15px;
+    margin-left: 2px;
+    margin-bottom: 0;
+  }
+  .container-card-2 p {
+    font-size: 1.135rem;
+    text-align: center;
+  }
+  .container-card-2 .div-email-input {
+    margin-top: 0;
+    height: 50px;
+  }
+  .label-2 {
+    top: 50%;
+    left: 5%;
+  }
+  /* Seção Perguntas - Fim */
+  /* Seção Links - Início */
+  .container-footer {
+    padding: 60px 38px 50px 38px;
+    height: 465px;
+  }
+  .container-footer h3 {
+    padding-bottom: 15px;
+  }
+  .container-footer p {
+    margin-bottom: 18px;
+    font-size: 0.855rem;
+  }
+  .container-colunas {
+    gap: 5px;
+  }
+  #unic {
+    margin-bottom: 36px;
+  }
+  .coluna {
+    width: 48%;
+  }
+  .origem p {
+    padding-bottom: 18px;
+  }
+  /* Seção Links - Fim */
+}
 /* Responsivo - Fim*/
