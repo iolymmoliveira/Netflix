@@ -24,15 +24,15 @@ Neste projeto foi necessário utilizar uma fonte diferente da utilizada pela Net
 <p>:iphone:</p>
 <p align= "center">
   <img src="assets/imgs/mobile_01.gif">
-  <img src="assets/imgs/mobile_02.gif">
   <img src="assets/imgs/mobile_03.gif">
+  <img src="assets/videos/mobile.gif">
 </p>
 </br>
 </br>
 
 <p>:tablet:</p>
 <p align= "center">
-  <img src="assets/imgs/tablet.gif">
+  <img src="assets/videos/tablet.gif">
   <img src="assets/imgs/galaxy_fold.gif">
 </p>
 </br>
@@ -41,6 +41,8 @@ Neste projeto foi necessário utilizar uma fonte diferente da utilizada pela Net
 <p>:computer:</p>
 <p align= "center">
   <img src="assets/imgs/desktop.gif">
+  </br>
+  <img src="assets/videos/desktop.gif">
 </p>
 </br>
 </br>
