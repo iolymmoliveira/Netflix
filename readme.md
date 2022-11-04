@@ -19,7 +19,9 @@ Neste projeto foi necessário utilizar uma fonte diferente da utilizada pela Net
 </br>
 
 ## Detalhes
-
+</br>
+https://iolymmoliveira.github.io/Netflix/
+</br>
 <p></p>
 <p>:iphone:</p>
 <p align= "center">
